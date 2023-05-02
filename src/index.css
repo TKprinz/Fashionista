@@ -7,13 +7,13 @@ body {
 /* Header */
 header {
   display: flex;
-  width: 90%;
-  margin: 20px;
+  width: 100%;
+
   justify-content: space-around;
   align-items: center;
   background-color: #ffffff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+
   position: fixed;
 }
 
@@ -94,9 +94,9 @@ nav .dropdown-content a:hover {
 
 /* Hero */
 .hero {
-  height: 800px;
-  background-image: url("https://en.louisvuitton.com/images/is/image/PUSH3_IconicHandbags_NewWave_DI3.jpg?wid=2048");
-  background-size: cover;
+  height: 400px;
+  /* background-image: url("https://en.louisvuitton.com/images/is/image/PUSH3_IconicHandbags_NewWave_DI3.jpg?wid=2048"); */
+  /* background-size: cover; */
   background-position: center;
   display: flex;
   justify-content: center;
