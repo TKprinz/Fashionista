@@ -1,18 +1,16 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
-      <div className="logo">
-        <img src={logo} alt="Företagslogotyp" />
-      </div>
+      <div className="logo">LOGO</div>
       <nav>
         <ul>
           <li>
-            <a href="#">Hem</a>
+            <Link to="/">Hem</Link>
           </li>
           <li>
-            <a href="#">Om oss</a>
+            <Link to="/omoss">Om oss</Link>
           </li>
           <li>
             <a href="#">Kontakt</a>
