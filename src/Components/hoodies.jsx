@@ -1,17 +1,46 @@
-import React from "react";
 import Card from "./Card";
-import data from "./hoodies.json";
+import "./Card.css";
 
 function Hoodies() {
   const products = [
-    { name: "Svart Hoodie", price: 50 },
-    { name: "Grå Hoodie", price: 100 },
+    {
+      name: "Svart Hoodie",
+      price: 50,
+      image: "https://via.placeholder.com/150x150/000000/969696",
+    },
+    {
+      name: "Grå Hoodie",
+      price: 100,
+      image: "https://via.placeholder.com/150x150/757575/969696",
+    },
+    {
+      name: "Blå Hoodie",
+      price: 100,
+      image: "https://via.placeholder.com/150x150/001eff/969696",
+    },
+    {
+      name: "Röd Hoodie",
+      price: 100,
+      image: "https://via.placeholder.com/150x150/ff0000/969696",
+    },
+    {
+      name: "Gul Hoodie",
+      price: 100,
+      image: "https://via.placeholder.com/150x150/f2fa5c/969696",
+    },
   ];
   return (
-    <div className="card-list">
-      {products.map((product) => (
-        <Card name={product.name} price={product.price} />
-      ))}
+    <div className="container">
+      <div className="card-list">
+        {products.map((product, index) => (
+          <Card
+            key={index}
+            name={product.name}
+            price={product.price}
+            image={product.image}
+          />
+        ))}
+      </div>
     </div>
   );
 }

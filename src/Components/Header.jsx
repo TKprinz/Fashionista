@@ -19,7 +19,7 @@ function Header() {
           </li>
 
           <li className="dropdown">
-            <a href="#">Produkter</a>
+            <Link to="#">Produkter</Link>
             <div className="dropdown-content">
               <Link to="/hoodies">Hoodies</Link>
               <Link to="/tshirts">T-shirts</Link>

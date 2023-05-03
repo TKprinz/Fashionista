@@ -1,0 +1,19 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 100px;
+  gap: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  justify-content: center;
+}

@@ -12,6 +12,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Header />
+
         <Routes>
           <Route path="/tshirts" element={<Tshirts />} />
           <Route path="/pants" element={<Pants />} />
