@@ -3,24 +3,27 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header>
-      <div className="logo">LOGO</div>
+      <div className="logo">
+        <Link to="/">LOGO</Link>
+      </div>
       <nav>
         <ul>
           <li>
             <Link to="/">Hem</Link>
           </li>
           <li>
-            <Link to="/omoss">Om oss</Link>
+            <Link to="/Nyheter">Nyheter</Link>
           </li>
           <li>
-            <a href="#">Kontakt</a>
+            <Link to="/KontaktForm">Kontakta</Link>
           </li>
+
           <li className="dropdown">
             <a href="#">Produkter</a>
             <div className="dropdown-content">
-              <a href="#">Produkt 1</a>
-              <a href="#">Produkt 2</a>
-              <a href="#">Produkt 3</a>
+              <Link to="/hoodies">Hoodies</Link>
+              <Link to="/tshirts">T-shirts</Link>
+              <Link to="/pants">Pants</Link>
             </div>
           </li>
         </ul>

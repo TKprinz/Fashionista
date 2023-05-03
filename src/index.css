@@ -8,13 +8,11 @@ body {
 header {
   display: flex;
   width: 100%;
-
   justify-content: space-around;
   align-items: center;
   background-color: #ffffff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-
-  position: fixed;
+  position: sticky;
 }
 
 .logo img {
@@ -94,7 +92,7 @@ nav .dropdown-content a:hover {
 
 /* Hero */
 .hero {
-  height: 400px;
+  height: auto;
   /* background-image: url("https://en.louisvuitton.com/images/is/image/PUSH3_IconicHandbags_NewWave_DI3.jpg?wid=2048"); */
   /* background-size: cover; */
   background-position: center;
@@ -108,4 +106,71 @@ nav .dropdown-content a:hover {
   font-size: 48px;
   text-align: center;
   text-shadow: 2px 2px #000000;
+}
+.hero img {
+  height: 100vh;
+}
+
+/* Default font and box sizing */
+body {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the content vertically and horizontally */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Form styles */
+form {
+  background-color: #ffffff;
+
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  margin-left: 37%;
+  margin-top: 10%;
+}
+
+/* Form input styles */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 100px;
+}
+
+/* Form button styles */
+button[type="submit"] {
+  background-color: #0794cc;
+  border: none;
+  border-radius: 3px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #02c74d;
 }
