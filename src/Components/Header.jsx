@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -13,14 +13,14 @@ function Header() {
             <Link to="/omoss">Om oss</Link>
           </li>
           <li>
-            <a href="#">Kontakt</a>
+            <a href="/">Kontakt</a>
           </li>
           <li className="dropdown">
-            <a href="#">Produkter</a>
+            <a href="/">Produkter</a>
             <div className="dropdown-content">
-              <a href="#">Produkt 1</a>
-              <a href="#">Produkt 2</a>
-              <a href="#">Produkt 3</a>
+              <a href="/">Produkt 1</a>
+              <a href="/">Produkt 2</a>
+              <a href="/">Produkt 3</a>
             </div>
           </li>
         </ul>

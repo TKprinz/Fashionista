@@ -1,7 +1,7 @@
 /* Globala inställningar */
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* Header */
@@ -94,7 +94,7 @@ nav .dropdown-content a:hover {
 
 /* Hero */
 .hero {
-  height: 400px;
+  height: auto;
   /* background-image: url("https://en.louisvuitton.com/images/is/image/PUSH3_IconicHandbags_NewWave_DI3.jpg?wid=2048"); */
   /* background-size: cover; */
   background-position: center;
@@ -108,4 +108,7 @@ nav .dropdown-content a:hover {
   font-size: 48px;
   text-align: center;
   text-shadow: 2px 2px #000000;
+}
+.hero > img {
+  height: 100vh;
 }
