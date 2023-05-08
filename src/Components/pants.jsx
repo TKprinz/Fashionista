@@ -4,6 +4,8 @@ function Pants() {
     {
       name: "Röd Byxa",
       price: 240,
+      description: "",
+      tag: "",
       image: "https://via.placeholder.com/150x150/ff0000/969696",
     },
     {
