@@ -1,6 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AppContext } from '../appContext';
+import { useState, useEffect } from 'react';
 
 function Header() {
+  const { filterArray } = useContext(AppContext);
+
+  const filterCategory = (e) => {
+    filterArray(e);
+  };
+
   return (
     <header>
       <div className="logo">
@@ -21,9 +30,15 @@ function Header() {
           <li className="dropdown">
             <Link to="#">Produkter</Link>
             <div className="dropdown-content">
-              <Link to="/hoodies">Hoodies</Link>
-              <Link to="/tshirts">T-shirts</Link>
-              <Link to="/pants">Pants</Link>
+              <div className="flex flex-col ">
+                <button onClick={() => filterCategory('hoodie')}>
+                  Hoodies
+                </button>
+                <button onClick={() => filterCategory('tshirt')}>
+                  T-shirts
+                </button>
+                <button onClick={() => filterCategory('pants')}>Pants</button>
+              </div>
             </div>
           </li>
         </ul>

@@ -1,32 +1,39 @@
-import { createContext, useState } from "react";
-import { jsonArray } from "./Components/Product";
+import { createContext, useState, useEffect } from 'react';
+import { jsonArray } from './Components/Product';
 
 const AppContext = createContext();
 
-export function AppProvider({ children }) {
+export const AppProvider = ({ children }) => {
   const [produceArray, setProduceArray] = useState(jsonArray);
+  const [filteredResults, setFilteredResults] = useState(jsonArray);
 
-  const filteredArray = (input) => {
+  useEffect(() => {
+    console.log(produceArray);
+  });
+
+  const filterArray = async (input) => {
     let newArray = [...produceArray];
-    let printOutArray = newArray.filter((item) => {
+    let printOutArray = await newArray.filter((item) => {
       return item.tag.includes(input);
     });
-    setProduceArray(printOutArray);
+    setFilteredResults(printOutArray);
   };
+
   const Tester = () => {
-    console.log("produceArray");
+    console.log('produceArray');
   };
 
   return (
     <AppContext.Provider
       value={{
         produceArray,
-        filteredArray,
         Tester,
+        filterArray,
+        filteredResults,
       }}
     >
       {children}
     </AppContext.Provider>
   );
-}
-export default AppContext;
+};
+export { AppContext };
