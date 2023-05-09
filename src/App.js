@@ -1,13 +1,14 @@
-import React from 'react';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import Header from './Components/Header';
-import Hero from './Components/Hero';
-import KontaktForm from './Components/KontaktForm';
-import Hoodies from './Components/hoodies';
-import Tshirts from './Components/tshirts';
-import Pants from './Components/pants';
-import Results from './Components/Results';
-import { AppProvider } from './appContext';
+import React from "react";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Header from "./Components/Header";
+import Hero from "./Components/Hero";
+import KontaktForm from "./Components/KontaktForm";
+import Hoodies from "./Components/hoodies";
+import Tshirts from "./Components/tshirts";
+import Pants from "./Components/pants";
+import Results from "./Components/Results";
+import { AppProvider } from "./appContext";
+import Nyheter from "./Components/Nyheter";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/KontaktForm" element={<KontaktForm />} />
           <Route path="/" element={<Hero />} />
           <Route path="/" element={<Results />} />
+          <Route path="/Nyheter" element={<Nyheter />} />
         </Routes>
       </BrowserRouter>
     </AppProvider>

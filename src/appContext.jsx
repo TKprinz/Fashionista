@@ -1,5 +1,5 @@
-import { createContext, useState, useEffect } from 'react';
-import { jsonArray } from './Components/Product';
+import { createContext, useState, useEffect } from "react";
+import { jsonArray } from "./Components/Product";
 
 const AppContext = createContext();
 
@@ -23,7 +23,7 @@ export const AppProvider = ({ children }) => {
   const CreateProduce = async () => {};
 
   const Tester = () => {
-    console.log('produceArray');
+    console.log("produceArray");
   };
 
   return (

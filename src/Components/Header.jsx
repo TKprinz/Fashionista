@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import { useContext } from 'react';
-import { AppContext } from '../appContext';
-import { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AppContext } from "../appContext";
+import { useState, useEffect } from "react";
 
 function Header() {
   const { filterArray, produceArray, ResetArray } = useContext(AppContext);
@@ -38,18 +38,18 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Hem</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/Nyheter">Nyheter</Link>
+            <Link to="/Nyheter">News</Link>
           </li>
           <li>
-            <Link to="/KontaktForm">Kontakt</Link>
+            <Link to="/KontaktForm">Contact</Link>
           </li>
 
           <li className="dropdown">
             <Link to="/Results" onClick={resArray}>
-              Produkter
+              Products
             </Link>
             <div className="dropdown-content">
               <div className="flex flex-col z-20 ">
