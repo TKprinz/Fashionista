@@ -21,7 +21,7 @@ const Results = () => {
 
   return (
     <div className="flex mx-auto justify-center mb-10">
-      <div className="flex flex-wrap gap-2 mt-16 mx-auto w-auto h-auto justify-center">
+      <div className="flex flex-wrap gap-2 mt-32 mx-auto w-auto h-auto justify-center">
         {/* <Imageslider slides={slides}></Imageslider>*/}
         {filteredResults.map((product, index) => {
           return <Produce props={product} key={index}></Produce>;

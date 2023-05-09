@@ -4,14 +4,34 @@ import { AppContext } from '../appContext';
 import { useState, useEffect } from 'react';
 
 function Header() {
-  const { filterArray } = useContext(AppContext);
+  const { filterArray, produceArray, ResetArray } = useContext(AppContext);
+  const [dropdown, setDropdown] = useState([]);
+
+  useEffect(() => {
+    const tagArray = [];
+    const updateTags = (async) => {
+      const newArray = [...produceArray];
+      newArray.forEach((item) => {
+        if (tagArray.includes(item.tag)) {
+          return;
+        } else {
+          tagArray.push(item.tag);
+        }
+      });
+    };
+    updateTags();
+    setDropdown(tagArray);
+  }, []);
 
   const filterCategory = (e) => {
     filterArray(e);
   };
+  const resArray = () => {
+    ResetArray();
+  };
 
   return (
-    <header>
+    <header className="mb-2">
       <div className="logo">
         <Link to="/">LOGO</Link>
       </div>
@@ -24,20 +44,24 @@ function Header() {
             <Link to="/Nyheter">Nyheter</Link>
           </li>
           <li>
-            <Link to="/KontaktForm">Kontakta</Link>
+            <Link to="/KontaktForm">Kontakt</Link>
           </li>
 
           <li className="dropdown">
-            <Link to="#">Produkter</Link>
+            <Link to="/Results" onClick={resArray}>
+              Produkter
+            </Link>
             <div className="dropdown-content">
-              <div className="flex flex-col ">
-                <button onClick={() => filterCategory('hoodie')}>
-                  Hoodies
-                </button>
-                <button onClick={() => filterCategory('tshirt')}>
-                  T-shirts
-                </button>
-                <button onClick={() => filterCategory('pants')}>Pants</button>
+              <div className="flex flex-col z-20 ">
+                {dropdown.map((tag, index) => {
+                  return (
+                    <Link to="/Results">
+                      <button onClick={() => filterCategory(tag)} key={index}>
+                        {tag}
+                      </button>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </li>

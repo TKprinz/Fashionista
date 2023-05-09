@@ -1,7 +1,7 @@
 export const jsonArray = [
   {
     name: 'Monogram French Terry Zip-Through Hoodie',
-    tag: 'hoodie',
+    tag: 'Hoodies',
     description: 'A comfortable and stylish hoodie for casual wear.',
     price: 49.99,
     image:
@@ -11,7 +11,7 @@ export const jsonArray = [
   },
   {
     name: 'Printed Allover Hoodie',
-    tag: 'hoodie',
+    tag: 'Hoodies',
     description: 'A warm and cozy hoodie perfect for cold weather.',
     price: 59.99,
     image:
@@ -21,7 +21,7 @@ export const jsonArray = [
   },
   {
     name: 'Embroidered Signature Cotton Hoodie',
-    tag: 'hoodie',
+    tag: 'Hoodies',
     description: 'A simple and classic hoodie in black.',
     price: 39.99,
     image:
@@ -31,7 +31,7 @@ export const jsonArray = [
   },
   {
     name: 'Monogram Gradient Hoodie',
-    tag: 'hoodie',
+    tag: 'Hoodies',
     description: 'A lightweight and breathable hoodie for active wear.',
     price: 44.99,
     image:
@@ -41,7 +41,7 @@ export const jsonArray = [
   },
   {
     name: 'LV Jazz Multi Logo Hoodie',
-    tag: 'hoodie',
+    tag: 'Hoodies',
     description: 'A bold and colorful hoodie to make a statement.',
     price: 54.99,
     image:
@@ -51,7 +51,7 @@ export const jsonArray = [
   },
   {
     name: 'Monogram Circle Cut Hoodie',
-    tag: 'hoodie',
+    tag: 'Hoodies',
     description: 'A hoodie with a unique and eye-catching graphic print.',
     price: 64.99,
     image:
@@ -61,7 +61,7 @@ export const jsonArray = [
   },
   {
     name: 'Hybrid Hoodie Denim Jacket',
-    tag: 'hoodie',
+    tag: 'Hoodies',
     description:
       'A trendy and stylish cropped hoodie for a fashion-forward look.',
     price: 39.99,
@@ -72,7 +72,7 @@ export const jsonArray = [
   },
   {
     name: 'Graphic Bee Patched Hoodie',
-    tag: 'hoodie',
+    tag: 'Hoodies',
     description: 'A hoodie with a sporty design and breathable mesh panels.',
     price: 49.99,
     image:
@@ -82,7 +82,7 @@ export const jsonArray = [
   },
   {
     name: 'Monogram Comics Hoodie',
-    tag: 'hoodie',
+    tag: 'Hoodies',
     description: 'A cozy and warm oversized hoodie for maximum comfort.',
     price: 69.99,
     image:
@@ -92,7 +92,7 @@ export const jsonArray = [
   },
   {
     name: 'Monogram Zip-Through Hoodie',
-    tag: 'hoodie',
+    tag: 'Hoodies',
     description: 'A hoodie with a unique and trendy tie-dye pattern.',
     price: 59.99,
     image:
@@ -103,7 +103,7 @@ export const jsonArray = [
 
   {
     name: 'LVSE Soft Cargo Trousers',
-    tag: 'pants',
+    tag: 'Trousers',
     description:
       'A sleek and modern pair of slim fit pants for a sophisticated look.',
     price: 69.99,
@@ -114,7 +114,7 @@ export const jsonArray = [
   },
   {
     name: 'Monogram Trousers',
-    tag: 'pants',
+    tag: 'Trousers',
     description:
       'A durable and functional pair of cargo pants with plenty of pockets.',
     price: 79.99,
@@ -125,7 +125,7 @@ export const jsonArray = [
   },
   {
     name: 'LV Buckle Technical Pants',
-    tag: 'pants',
+    tag: 'Trousers',
     description:
       'A classic and versatile pair of chino pants suitable for any occasion.',
     price: 59.99,
@@ -136,7 +136,7 @@ export const jsonArray = [
   },
   {
     name: 'Embroidered Signature Cotton Jogpants',
-    tag: 'pants',
+    tag: 'Trousers',
     description:
       'A comfortable and stylish pair of jogger pants for casual wear.',
     price: 49.99,
@@ -147,7 +147,7 @@ export const jsonArray = [
   },
   {
     name: 'LVSE Monogram Trousers',
-    tag: 'pants',
+    tag: 'Trousers',
     description: 'A trendy and fashion-forward pair of cropped pants.',
     price: 54.99,
     image:
@@ -157,7 +157,7 @@ export const jsonArray = [
   },
   {
     name: 'Cargo Trousers',
-    tag: 'pants',
+    tag: 'Trousers',
     description: 'A comfortable and flattering pair of high waisted pants.',
     price: 59.99,
     image:
@@ -167,7 +167,7 @@ export const jsonArray = [
   },
   {
     name: 'Double-Face Travel Trousers',
-    tag: 'pants',
+    tag: 'Trousers',
     description:
       'A flowy and relaxed pair of wide leg pants for a bohemian look.',
     price: 64.99,
@@ -178,7 +178,7 @@ export const jsonArray = [
   },
   {
     name: 'LV x YK Jogging Trousers',
-    tag: 'pants',
+    tag: 'Trousers',
     description: 'A bold and edgy pair of leather pants for a daring outfit.',
     price: 99.99,
     image:
@@ -188,7 +188,7 @@ export const jsonArray = [
   },
   {
     name: 'Workwear Trousers',
-    tag: 'pants',
+    tag: 'Trousers',
     description:
       'A cozy and textured pair of corduroy pants for fall and winter.',
     price: 74.99,
@@ -199,7 +199,7 @@ export const jsonArray = [
   },
   {
     name: 'Regular Denim Trousers',
-    tag: 'pants',
+    tag: 'Trousers',
     description: 'A sophisticated and elegant pair of pleated pants.',
     price: 89.99,
     image:
@@ -210,7 +210,7 @@ export const jsonArray = [
 
   {
     name: 'Louis Vuitton Signature Print T-Shirt',
-    tag: 'tshirt',
+    tag: 'T-shirts',
     description: 'A classic and essential white t-shirt for any wardrobe.',
     price: 19.99,
     image:
@@ -220,7 +220,7 @@ export const jsonArray = [
   },
   {
     name: 'Tie-Dye T-Shirt',
-    tag: 'tshirt',
+    tag: 'T-shirts',
     description: 'A trendy and eye-catching graphic print t-shirt.',
     price: 29.99,
     image:
@@ -230,7 +230,7 @@ export const jsonArray = [
   },
   {
     name: 'Rainbow Printed T-Shirt',
-    tag: 'tshirt',
+    tag: 'T-shirts',
     description: 'A flattering and versatile v-neck t-shirt.',
     price: 24.99,
     image:
@@ -240,17 +240,17 @@ export const jsonArray = [
   },
   {
     name: 'LV Jazz Flyers Short-Sleeved T-Shirt',
-    tag: 'tshirt',
+    tag: 'T-shirts',
     description: 'A classic and timeless striped t-shirt for a nautical look.',
     price: 24.99,
     image:
-      'https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-jazz-flyers-short-sleeved-t-shirt-ready-to-wear--HOY30WNPG002_PM1_Worn%20view.png?wid=2048&hei=2048',
+      'https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-jazz-flyers-short-sleeved-t-shirt-ready-to-wear--HOY30WNPG002_PM2_Front%20view.png?wid=2048&hei=2048',
     quantity: 10,
     new: true,
   },
   {
     name: 'LV Concert Print T-Shirt',
-    tag: 'tshirt',
+    tag: 'T-shirts',
     description:
       'A functional and stylish pocket t-shirt for a laid-back vibe.',
     price: 22.99,
@@ -261,7 +261,7 @@ export const jsonArray = [
   },
   {
     name: 'LV Frequency Graphic T-Shirt',
-    tag: 'tshirt',
+    tag: 'T-shirts',
     description: 'A trendy and casual henley t-shirt with button detailing.',
     price: 29.99,
     image:
@@ -271,7 +271,7 @@ export const jsonArray = [
   },
   {
     name: 'LV House Printed T-Shirt',
-    tag: 'tshirt',
+    tag: 'T-shirts',
     description: 'A high-performance and moisture-wicking athletic t-shirt.',
     price: 34.99,
     image:
@@ -281,7 +281,7 @@ export const jsonArray = [
   },
   {
     name: 'Classic T-Shirt',
-    tag: 'tshirt',
+    tag: 'T-shirts',
     description: 'A comfortable and versatile long sleeve t-shirt.',
     price: 26.99,
     image:
@@ -291,7 +291,7 @@ export const jsonArray = [
   },
   {
     name: 'LV Flower Tapestry Print T-Shirt',
-    tag: 'tshirt',
+    tag: 'T-shirts',
     description: 'A trendy and fashion-forward cropped t-shirt.',
     price: 19.99,
     image:
@@ -302,7 +302,7 @@ export const jsonArray = [
 
   {
     name: 'LV Spread Embroidery T-Shirt',
-    tag: 'tshirt',
+    tag: 'T-shirts',
     description: 'A relaxed and oversized t-shirt for a comfortable fit.',
     price: 32.99,
     image:

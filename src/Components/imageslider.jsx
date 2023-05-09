@@ -1,40 +1,40 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const Imageslider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const sliderStyles = {
-    height: "100%",
-    position: "relative",
+    height: '100%',
+    position: 'relative',
   };
 
   const slideStyles = {
-    width: "100%",
-    height: "100%",
-    borderRadius: "10px",
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundImage: `url(${slides[currentIndex].url})`,
+    width: '100%',
+    height: '100%',
+    borderRadius: '10px',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundImage: `image(${slides[currentIndex].url})`,
   };
   const leftArrowStyles = {
-    position: "absolute",
-    top: "50%",
-    transform: "translate(0, -50%)",
-    left: "32px",
-    fontsize: "45px",
-    color: "#fff",
+    position: 'absolute',
+    top: '50%',
+    transform: 'translate(0, -50%)',
+    left: '32px',
+    fontsize: '45px',
+    color: '#fff',
     zIndex: 1,
-    cursor: "pointer",
+    cursor: 'pointer',
   };
   const rightArrowStyles = {
-    position: "absolute",
-    top: "50%",
-    transform: "translate(0, -50%)",
-    right: "32px",
-    fontsize: "45px",
-    color: "#fff",
+    position: 'absolute',
+    top: '50%',
+    transform: 'translate(0, -50%)',
+    right: '32px',
+    fontsize: '45px',
+    color: '#fff',
     zIndex: 1,
-    cursor: "pointer",
+    cursor: 'pointer',
   };
 
   const goToPrevious = () => {

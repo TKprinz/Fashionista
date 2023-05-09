@@ -7,10 +7,6 @@ export const AppProvider = ({ children }) => {
   const [produceArray, setProduceArray] = useState(jsonArray);
   const [filteredResults, setFilteredResults] = useState(jsonArray);
 
-  useEffect(() => {
-    console.log(produceArray);
-  });
-
   const filterArray = async (input) => {
     let newArray = [...produceArray];
     let printOutArray = await newArray.filter((item) => {
@@ -18,6 +14,13 @@ export const AppProvider = ({ children }) => {
     });
     setFilteredResults(printOutArray);
   };
+
+  const ResetArray = async () => {
+    let newArray = [...produceArray];
+    setFilteredResults(newArray);
+  };
+
+  const CreateProduce = async () => {};
 
   const Tester = () => {
     console.log('produceArray');
@@ -28,6 +31,7 @@ export const AppProvider = ({ children }) => {
       value={{
         produceArray,
         Tester,
+        ResetArray,
         filterArray,
         filteredResults,
       }}

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function KontaktForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -12,19 +12,18 @@ function KontaktForm() {
   };
 
   return (
-    <>
+    <div className="flex justify-center mx-auto">
       <form onSubmit={handleSubmit}>
-        <h2>Kontakta oss för support</h2>
+        <h2>Contact us for support.</h2>
         <p>
-          Har du några frågor eller behöver du hjälp med våra tjänster? Tveka
-          inte att kontakta oss! Fyll i formuläret nedan eller skicka oss ett
-          e-postmeddelande på{" "}
-          <a href="mailto:support@example.com">support@example.com</a>. Vi
-          återkommer till dig så snart som möjligt.
+          Do you have any questions or need help with our services? Do not
+          hesitate to contact us! Fill in the form below or send us an email at{' '}
+          <a href="mailto:support@fashionista.com">support@fashionista.com</a>.
+          We will get back to you as soon as possible.
         </p>
 
         <label>
-          Namn:
+          Name:
           <input
             type="text"
             value={name}
@@ -33,7 +32,7 @@ function KontaktForm() {
         </label>
 
         <label>
-          E-post:
+          E-mail:
           <input
             type="email"
             value={email}
@@ -42,16 +41,16 @@ function KontaktForm() {
         </label>
 
         <label>
-          Meddelande:
+          Message:
           <textarea
             value={message}
             onChange={(event) => setMessage(event.target.value)}
           />
         </label>
 
-        <button type="submit">Skicka</button>
+        <button type="submit">Send</button>
       </form>
-    </>
+    </div>
   );
 }
 
