@@ -1,8 +1,9 @@
-import React from 'react';
-import Imageslider from './imageslider';
-import Produce from './produce';
-import jsonArray from './Product';
-import ClickableImages from './ClickableImages';
+import React from "react";
+import Imageslider from "./imageslider";
+import Produce from "./produce";
+import jsonArray from "./Product";
+import ClickableImages from "./ClickableImages";
+import Nyheter from "./Nyheter";
 function Hero() {
   return (
     <div>
@@ -13,6 +14,7 @@ function Hero() {
           alt="heroImg"
         />
       </div>
+      <Nyheter />
       <ClickableImages />
     </div>
   );
