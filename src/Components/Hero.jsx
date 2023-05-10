@@ -1,7 +1,7 @@
 import React from "react";
-
 import ClickableImages from "./ClickableImages";
 import Nyheter from "./Nyheter";
+
 function Hero() {
   return (
     <div>
