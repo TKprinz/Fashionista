@@ -7,7 +7,9 @@ function Imageslider({ news }) {
     <Carousel className="mt-5" style={{ backgroundColor: "#ccc" }}>
       {news.map((item) => (
         <Carousel.Item key={item.name}>
-          <img className="d-block w-100" src={item.image} alt={item.title} />
+          <div className="newsSite">
+            <img className="d-block w-100" src={item.image} alt={item.title} />
+          </div>
           <Carousel.Caption>
             <h3>{item.name}</h3>
             <p>{item.description}</p>
