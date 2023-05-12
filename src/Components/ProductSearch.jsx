@@ -17,20 +17,24 @@ function ProductSearch() {
 
   return (
     <div className="grid-container">
-      <input className="m-0" type="text" onChange={handleSearch} />
+      <div className="search-container">
+        <input className="m-0" type="text" onChange={handleSearch} />
+      </div>
 
-      {search &&
-        filteredProducts.map((product) => (
-          <div className="grid-item" key={product.id}>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={product.image} />
-              <Card.Body>
-                <Card.Title>{product.name}</Card.Title>
-                <Card.Text>{product.description}</Card.Text>
-              </Card.Body>
-            </Card>
-          </div>
-        ))}
+      <div className="grid">
+        {search &&
+          filteredProducts.map((product) => (
+            <div className="grid-item" key={product.id}>
+              <Card style={{ width: "18rem" }}>
+                <Card.Img variant="top" src={product.image} />
+                <Card.Body>
+                  <Card.Title>{product.name}</Card.Title>
+                  <Card.Text>{product.description}</Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+      </div>
     </div>
   );
 }

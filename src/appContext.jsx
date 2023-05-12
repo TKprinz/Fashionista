@@ -20,7 +20,15 @@ export const AppProvider = ({ children }) => {
     setFilteredResults(newArray);
   };
 
-  const CreateProduce = async () => {};
+  const changeQuant = (prodNR, quant) => {
+    let newArray = [...produceArray];
+    let filteredArray = newArray.filter((item) => {
+      return item.productnumber.includes(prodNR);
+    });
+    filteredArray[0].quantity += quant;
+    setProduceArray(newArray);
+    console.log("in context");
+  };
 
   const Tester = () => {
     console.log("produceArray");
@@ -33,6 +41,7 @@ export const AppProvider = ({ children }) => {
         Tester,
         ResetArray,
         filterArray,
+        changeQuant,
         filteredResults,
       }}
     >

@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import KontaktForm from "./Components/KontaktForm";
 import Results from "./Components/Results";
+import Checkout from "./Components/Checkout";
 import { AppProvider } from "./appContext";
 import Nyheter from "./Components/Nyheter";
 
@@ -17,6 +18,8 @@ function App() {
           <Route path="/KontaktForm" element={<KontaktForm />} />
           <Route path="/" element={<Hero />} />
           <Route path="/" element={<Results />} />
+          <Route path="/Cart" element={<Checkout />} />
+          <Route path="/Checkout" element={<Checkout />} />
           <Route path="/Nyheter" element={<Nyheter />} />
         </Routes>
       </BrowserRouter>

@@ -50,6 +50,9 @@ function Header() {
           <li>
             <Link to="/KontaktForm">Contact</Link>
           </li>
+          <li>
+            <Link to="/Cart">Cart</Link>
+          </li>
 
           <li className="dropdown">
             <Link to="/Results" onClick={resArray}>
