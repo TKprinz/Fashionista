@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AppContext } from "../appContext";
 import { useState, useEffect } from "react";
+import ProductSearch from "./ProductSearch";
 
 function Header() {
   const { filterArray, produceArray, ResetArray } = useContext(AppContext);
@@ -34,6 +35,9 @@ function Header() {
     <header className="mb-2">
       <div className="logo">
         <Link to="/">LOGO</Link>
+      </div>
+      <div>
+        <ProductSearch />
       </div>
       <nav>
         <ul>
