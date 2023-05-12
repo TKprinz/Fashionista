@@ -216,3 +216,18 @@ button[type="submit"]:hover {
 .image-wrapper:hover .hover-text {
   opacity: 1;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+  grid-gap: 1rem;
+}
+
+.grid-item {
+  margin-bottom: 1rem;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}

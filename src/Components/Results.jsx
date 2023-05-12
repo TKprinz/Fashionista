@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 //import Imageslider from './imageslider';
-import { useContext } from 'react';
-import { AppContext } from '../appContext';
-import Produce from './produce';
+import { useContext } from "react";
+import { AppContext } from "../appContext";
+import Produce from "./produce";
 
 // const slides = [
 //   { url: 'https://via.placeholder.com/150x150/757575/969696', title: 'grey' },
@@ -23,6 +23,7 @@ const Results = () => {
     <div className="flex mx-auto justify-center mb-10">
       <div className="flex flex-wrap gap-2 mt-32 mx-auto w-auto h-auto justify-center">
         {/* <Imageslider slides={slides}></Imageslider>*/}
+
         {filteredResults.map((product, index) => {
           return <Produce props={product} key={index}></Produce>;
         })}
