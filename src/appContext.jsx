@@ -1,11 +1,27 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState } from "react";
 import { jsonArray } from "./Components/Product";
 
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
+  const [showComponent, setShowComponent] = useState(true); // För att dölja komponenter när searchbar är aktiv
   const [produceArray, setProduceArray] = useState(jsonArray);
   const [filteredResults, setFilteredResults] = useState(jsonArray);
+  const [wishlist, setWishlist] = useState(
+    []
+    // produceArray.filter((item) => item.wish === true)
+  );
+
+  function addToWishlist(newItem) {
+    if (!newItem.wish) {
+      const itemExists = wishlist.some(
+        (item) => item.productnumber === newItem.productnumber
+      );
+      if (!itemExists) {
+        setWishlist((prevWishlist) => [...prevWishlist, newItem]);
+      }
+    }
+  }
 
   const filterArray = async (input) => {
     let newArray = [...produceArray];
@@ -27,7 +43,6 @@ export const AppProvider = ({ children }) => {
     });
     filteredArray[0].quantity += quant;
     setProduceArray(newArray);
-    console.log("in context");
   };
 
   const Tester = () => {
@@ -43,6 +58,11 @@ export const AppProvider = ({ children }) => {
         filterArray,
         changeQuant,
         filteredResults,
+        wishlist,
+        setWishlist,
+        addToWishlist,
+        showComponent,
+        setShowComponent,
       }}
     >
       {children}

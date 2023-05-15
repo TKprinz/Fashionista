@@ -8,15 +8,20 @@ const containerStyles = {
   margin: "0 auto",
 };
 function Nyheter() {
+  const { showComponent } = useContext(AppContext);
   const { produceArray } = useContext(AppContext);
   const [newProducts, setNewProducts] = useState(
     produceArray.filter((product) => product.new === true)
   );
 
   return (
-    <div style={containerStyles}>
-      <Imageslider news={newProducts} />
-    </div>
+    <>
+      {showComponent && (
+        <div style={containerStyles}>
+          <Imageslider news={newProducts} />
+        </div>
+      )}
+    </>
   );
 }
 

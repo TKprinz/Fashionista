@@ -72,6 +72,9 @@ function Header() {
               </div>
             </div>
           </li>
+          <li>
+            <Link to="/Wishlist">Wishlist</Link>
+          </li>
         </ul>
       </nav>
     </header>

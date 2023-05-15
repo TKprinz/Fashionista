@@ -90,7 +90,7 @@ export const jsonArray = [
     description: "A hoodie with a sporty design and breathable mesh panels.",
     price: 49.99,
     image:
-      "https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-graphic-bee-patched-hoodie-ready-to-wear--HNY85WIHN80_PM2_Front%20view.png?wid=2048&hei=2048",
+      "https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton--HNY85WIHN810_PM2_Front%20view.jpg?wid=750&hei=870",
     quantity: 0,
     new: false,
     wish: false,
@@ -303,7 +303,7 @@ export const jsonArray = [
       "A functional and stylish pocket t-shirt for a laid-back vibe.",
     price: 22.99,
     image:
-      "https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-concert-print-t-shirt-ready-to-wear--HOY0WNPG900_PM2_Front%20view.png?wid=2048&hei=2048",
+      "https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-concert-print-t-shirt-ready-to-wear--HOY10WNPG900_PM2_Front%20view.jpg",
     quantity: 0,
     new: false,
     wish: false,
@@ -369,17 +369,5 @@ export const jsonArray = [
     new: true,
     wish: false,
     productnumber: "30",
-  },
-  {
-    name: "HCs underpants",
-    tag: "underpants",
-    description: "old but sitll gold",
-    price: 2000.99,
-    image:
-      "https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-flower-tapestry-print-t-shirt-ready-to-wear--HNY91WNPG002_PM2_Front%20view.png?wid=2048&hei=2048",
-    quantity: 0,
-    new: true,
-    wish: true,
-    productnumber: "29",
   },
 ];

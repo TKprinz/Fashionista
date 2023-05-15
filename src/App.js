@@ -7,6 +7,7 @@ import Results from "./Components/Results";
 import Checkout from "./Components/Checkout";
 import { AppProvider } from "./appContext";
 import Nyheter from "./Components/Nyheter";
+import Wishlist from "./Components/Wishlist";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/Cart" element={<Checkout />} />
           <Route path="/Checkout" element={<Checkout />} />
           <Route path="/Nyheter" element={<Nyheter />} />
+          <Route path="/Wishlist" element={<Wishlist />} />
         </Routes>
       </BrowserRouter>
     </AppProvider>
