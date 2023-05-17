@@ -21,7 +21,7 @@ function Produce(props) {
   return (
     <Card className="produce-card">
       <Card.Img
-        className="produce-image"
+        className="produce-image mt-4"
         variant="top"
         src={props.props.image}
       />
